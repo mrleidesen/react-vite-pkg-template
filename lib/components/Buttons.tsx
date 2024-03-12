@@ -1,5 +1,13 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
-export function PrimaryButton({ children }: {children?: ReactNode}) {
-  return <button className="bg-blue-500 text-white">{children}</button>;
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+`;
+
+export function PrimaryButton({ children }: { children?: ReactNode }) {
+  return <StyledButton>{children}</StyledButton>;
 }
